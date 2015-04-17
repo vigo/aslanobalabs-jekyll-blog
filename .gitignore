@@ -3,3 +3,4 @@ _site
 .bundle
 vendor/bundle
 _drafts/
+_stash/
