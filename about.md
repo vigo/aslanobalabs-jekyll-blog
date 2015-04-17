@@ -2,18 +2,16 @@
 layout: page
 title: Hakkında
 permalink: /hakkinda/
-header-img: "images/about-2-bg.jpg"
+header-img: "images/about-bg.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
+Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
+Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı
+oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri
+endüstri standardı sahte metinler olarak kullanılmıştır.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden
+elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren
+Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi
+Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile
+popüler olmuştur.
