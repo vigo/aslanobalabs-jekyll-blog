@@ -6,6 +6,7 @@
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
                     <span class="subheading">{% if page.description %}{{ page.description }}{% else %}{{ page.subtitle }}{% endif %}</span>
+                    {% if page.date %}<span class="meta">{% if page.author %}{{ page.author }}, {% endif %}{{ page.date | localize: "%d %B %Y, %A %H:%M" }}</span>{% endif %}
                 </div>
             </div>
         </div>

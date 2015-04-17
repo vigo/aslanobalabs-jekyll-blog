@@ -14,6 +14,10 @@ module Jekyll
       I18n.l input, :format => format
     end
 
+    def translate(key)
+      I18n.t key
+    end
+
     def load_translations
       I18n.enforce_available_locales = false
       unless I18n::backend.instance_variable_get(:@translations)
