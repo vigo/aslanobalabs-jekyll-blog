@@ -49,13 +49,20 @@ rake post["Başlık","2015-04-17 22:00"]
 * i18n için açıklama
 * Türkçe locale için örnek açıklama
 * Disqus yorum eklentisi
+* Deployment mekanızması
+* Kategori ve Etiket eklentisi
+* Paylaş eklentisi
 
+## Kaynaklar
+
+Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
 ## Güncellemeler
 
 2015-04-17
 
 * İlk commit...
+* Retina desteği eklendi
 
 ## Katkı Yapmak için
 
@@ -68,3 +75,4 @@ rake post["Başlık","2015-04-17 22:00"]
 [01]: http://startbootstrap.com/template-overviews/clean-blog/
 [02]: http://getbootstrap.com/
 [03]: http://jekyllrb.com/
+[04]: http://www.wallpapervortex.com/
