@@ -8,17 +8,18 @@ NOW = Time.now.strftime(DATE_FORMAT)
 
 task :default => [:serve]
 
-desc "Ön izleme..."
 task :serve do
-  system "jekyll serve"
+  system "jekyll serve -w"
 end
 
-# rake post["Title"]
-# rake post["Title", "Date"]
+# rake post
+# rake post["Başlık"]
+# rake post["Başlık", "2015-04-17 22:00"]
 desc "Yeni blog post"
-task :post, :title, :post_date do |t, args|
-  title = args[:title] ? args[:title] : "My Blog Post"
-  post_date = args[:post_date] ? Date.parse(args[:post_date]).strftime(DATE_FORMAT) : NOW
+task :post, [:title, :post_date] do |t, args|
+  puts "#{args}"
+  title = args[:title] ? args[:title] : "Yeni Yazım"
+  post_date = args[:post_date] ? DateTime.parse(args[:post_date]).strftime(DATE_FORMAT) : NOW
   preps = prep_file(post_date, title)
   filename = preps[:filename]
   content = preps[:content]
@@ -33,10 +34,10 @@ def prep_file(post_date, title)
   output = ["---"]
   output << "layout:        post"
   output << "title:         \"#{title}\""
-  output << "subtitle:      \"#{title}\""
+  output << "subtitle:      \"Alt Başlık\""
   output << "date:          #{post_date}"
-  output << "categories:    category category"
-  output << "header-img:    \"images/\""
+  output << "# categories:    kategori kategori"
+  output << "header-img:    \"images/post-bg.jpg\""
   output << "published: true"
   output << "---"
   return {
