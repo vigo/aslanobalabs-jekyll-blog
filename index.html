@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "A XXXX Blog Theme by Start Bootstrap"
+description: "Yazılım Geliştiricisi Merkezi"
 ---
 
 <div class="site-legend">
@@ -10,25 +10,25 @@ description: "A XXXX Blog Theme by Start Bootstrap"
             <h2 class="post-title">{{ post.title }}</h2>
             {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
         </a>
-        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <p class="post-meta">{{ post.date | localize: "%-d %B %Y, %A %H:%M" }}</p>
     </div>
     <hr>
     {% endfor %}
-    
+
     {% if paginator.total_pages > 1 %}
     <ul class="pager">
         {% if paginator.previous_page %}
         <li class="previous">
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; {{ site.data.messages.locales[site.locale].next_posts }}</a>
         </li>
         {% endif %}
         {% if paginator.next_page %}
         <li class="next">
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ site.data.messages.locales[site.locale].previous_posts }} &rarr;</a>
         </li>
         {% endif %}
     </ul>
     {% endif %}
-    
+
 </div>
 
