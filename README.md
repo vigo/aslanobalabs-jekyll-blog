@@ -48,7 +48,6 @@ rake post["Başlık","2015-04-17 22:00"]
 * stash ve draft özelliği gelecek
 * i18n için açıklama
 * Türkçe locale için örnek açıklama
-* Disqus yorum eklentisi
 * Deployment mekanızması
 * Kategori ve Etiket eklentisi
 * Paylaş eklentisi
@@ -63,6 +62,7 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
 * İlk commit...
 * Retina desteği eklendi
+* Disqus yorum eklentisi
 
 ## Katkı Yapmak için
 
