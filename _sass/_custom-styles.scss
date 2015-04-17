@@ -2,3 +2,26 @@
 .pager li>a {
     text-transform: none;
 }
+
+
+@media only screen and (max-width: 767px) {
+    .navbar-default {
+        background-color: #555;
+        border-color: #333;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #777;
+        border-radius: 0;
+    }
+
+    .navbar-default .navbar-collapse {
+        border-color: initial;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color: white;
+        &:hover {
+            color: #ddd;
+        }
+    }
+}
