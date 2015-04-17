@@ -3,6 +3,11 @@
     text-transform: none;
 }
 
+address {
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+}
 
 @media only screen and (max-width: 767px) {
     .navbar-default {
