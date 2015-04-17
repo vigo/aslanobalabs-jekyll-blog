@@ -1,0 +1,7 @@
+locales:
+  tr:
+    previous_posts: "ESKİLER"
+    next_posts: "YENİLER"
+    toggle_navigation: "Navigasyonu değiştir"
+    navigation:
+        home: "Ana Sayfa"
