@@ -14,10 +14,9 @@ end
 
 # rake post
 # rake post["Başlık"]
-# rake post["Başlık", "2015-04-17 22:00"]
+# rake post["Başlık","2015-04-17 22:00"]
 desc "Yeni blog post"
 task :post, [:title, :post_date] do |t, args|
-  puts "#{args}"
   title = args[:title] ? args[:title] : "Yeni Yazım"
   post_date = args[:post_date] ? DateTime.parse(args[:post_date]).strftime(DATE_FORMAT) : NOW
   preps = prep_file(post_date, title)
