@@ -13,6 +13,7 @@ twitter_username: aslanobalabs
 github_username:  aslanobalabs
 speakerdeck_username: aslanobalabs
 header-img: images/home-bg.jpg
+header-logo: images/aslanobalabs-logo.png
 
 # Build settings
 markdown: redcarpet
