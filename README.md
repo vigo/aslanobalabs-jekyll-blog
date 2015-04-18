@@ -48,9 +48,22 @@ rake post["Başlık","2015-04-17 22:00"]
 * stash ve draft özelliği gelecek
 * i18n için açıklama
 * Türkçe locale için örnek açıklama
-* Deployment mekanızması
+* Deployment mekanizması
 * Kategori ve Etiket eklentisi
 * Paylaş eklentisi
+
+## Açıklamalar
+
+### site.env
+
+Özellikle disqus kullanımı esnasında, eğer geliştirme modundaysak boşu boşuna
+disqus’ın kodunu siteye ekletmemek için yapılan kontrol. Aksi halde, disqus,
+otomatik olarak `http://127.0.0.1:4000/` adresleriyle dolu sayfalar
+oluşturmaktadır.
+
+Yani siteyi test ederken, `disqus_shortname` girmenize rağmen ilgili eklentinin
+çalışmadığını görünce panik olmayın :) Bu kısım siteyi üretirken çalışacak
+ve canlıda (*production*) aktive olacaktır.
 
 ## Kaynaklar
 
