@@ -132,6 +132,7 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 örnek resimler.
 * i18n ve locale açıklamaları eklendi.
 * Mobil cihazlar için touch ikonları eklendi.
+* Eksik JavaScript efekt eklemesi (menü)
 
 **2015-04-17**
 

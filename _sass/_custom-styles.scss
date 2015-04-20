@@ -10,23 +10,36 @@ address {
 }
 
 @media only screen and (max-width: 767px) {
-    .navbar-default {
+    .navbar-custom {
+        position: fixed;
         background-color: #555;
         border-color: #333;
     }
-    .navbar-default .navbar-toggle {
+    .navbar-custom .navbar-toggle {
         border-color: #777;
         border-radius: 0;
     }
 
-    .navbar-default .navbar-collapse {
+    .navbar-custom .navbar-collapse {
         border-color: initial;
     }
 
-    .navbar-default .navbar-nav>li>a {
+    .navbar-custom .navbar-nav>li>a {
         color: white;
         &:hover {
             color: #ddd;
         }
     }
+}
+
+@media only screen and (min-width: 1170px){
+  .navbar-custom.is-fixed {
+    background-color: #555;
+    .nav li a {
+      color: white;
+      &:hover {
+       color: #ddd; 
+      }
+    }
+  }
 }
