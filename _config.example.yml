@@ -1,22 +1,28 @@
-# Site settings
-title: Aslanoba Labs
-email: your-email@domain.com
+# Site Ayarları
+title: Örnek Site
+email: kullanci@domain.com
 description: >
-  Yazılım geliştirici merkezine hoş geldiniz! Faaliyetlerimizden haberdar
-  olmak için e-posta listemize kayıt olun!
+  Siteniz ile ilgili açıklama
+  yazabilirsiniz!
 timezone: Europe/Istanbul
 locale: tr # Türkçe
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://labs.aslanobagroup.com/"
-twitter_username: aslanobalabs
-github_username:  aslanobalabs
-speakerdeck_username: aslanobalabs
-disqus_shortname: aslanobalabs
-header-img: images/home-bg.jpg
-header-logo: images/aslanobalabs-logo.png
+baseurl: ""                                  # Eğer varsa alt dizin, örnek: /blog/
+url: "http://domain.com/"                    # Sitenizin adresi
+twitter_username: hesap                      # varsa Twitter kullanıcı adı
+github_username:  hesap                      # varsa GitHub kullanıcı adı
+speakerdeck_username: hesap                  # varsa SpeakerDeck kullanıcı adı
+disqus_shortname: hesap                      # varsa Disqus kullanıcı adı (yorum mekanizması için)
 
-# Build settings
+header-img: images/example/home-bg.jpg
+header-logo: images/example/logo.png
+
+footer_address: |
+  Adres Satır 1
+  Adres Satır 2
+  Adres Satır 3
+
+# Html Üretme Ayarları
 markdown: redcarpet
 paginate: 5
 paginate_path: /sayfa/:num/

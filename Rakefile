@@ -8,6 +8,15 @@ NOW = Time.now.strftime(DATE_FORMAT)
 
 task :default => [:serve]
 
+desc "İlk kurulum (Lütfen önce bundle install yapın!)"
+task :initialize do
+  unless File.exists?('./_config.yml')
+    system "cp ./_config.example.yml ./_config.yml"
+    puts "Konfigürasyon dosyası kopyalandı!"
+  end
+  Rake::Task["serve"].invoke
+end
+
 task :serve do
   system "jekyll serve -w"
 end

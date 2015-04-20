@@ -2,7 +2,7 @@
 layout: page
 title: Hakkında
 permalink: /hakkinda/
-header-img: "images/about-bg.jpg"
+header-img: "images/example/about-bg.jpg"
 ---
 
 Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.
