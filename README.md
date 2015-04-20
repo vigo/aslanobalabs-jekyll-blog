@@ -131,6 +131,7 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 * Örnek site ve post için ayarlama yapıldı, `images/example/` dizinine gönderildi
 örnek resimler.
 * i18n ve locale açıklamaları eklendi.
+* Mobil cihazlar için touch ikonları eklendi.
 
 **2015-04-17**
 
