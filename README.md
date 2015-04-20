@@ -1,4 +1,4 @@
-# Aslanoba Labs Websitesi
+# Aslanoba Labs Jekyll Blog
 
 [Clean Blog][01] [Bootstrap][02] teması modifiye edilerek geliştirilen
 [Jekyll][03] statik site uygulamasıdır.
@@ -17,7 +17,7 @@
 **Ruby** ve **Bundler** gem'inin kurulumunan sonra;
 
 ```bash
-git clone https://github.com/aslanobalabs/labs.aslanobagroup.com test_sitem
+git clone https://github.com/aslanobalabs/aslanobalabs-jekyll-blog test_sitem
 cd test_sitem/
 bundle install --path=vendor/bundle
 rake initialize  # ilk konfigürasyon dosyasının ayarlanması
@@ -141,7 +141,7 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
 ## Katkı Yapmak için
 
-1. `fork` yapın ( https://github.com/aslanobalabs/labs.aslanobagroup.com/fork )
+1. `fork` yapın ( https://github.com/aslanobalabs/aslanobalabs-jekyll-blog/fork )
 2. Kendi `branch`’inizi yapın (`git checkout -b benim-eklerim`)
 3. Yaptıklarınızı `commit` edin (`git commit -am 'Yeni özellikler'`)
 4. `branch`’i `push` edin (`git push origin benim-eklerim`)
