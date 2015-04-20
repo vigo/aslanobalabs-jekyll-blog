@@ -4,3 +4,4 @@ _site
 vendor/bundle
 _drafts/
 _stash/
+_config.yml
