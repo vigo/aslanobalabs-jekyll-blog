@@ -9,6 +9,7 @@ locale: tr # Türkçe
 
 baseurl: ""                                  # Eğer varsa alt dizin, örnek: /blog/
 url: "http://domain.com/"                    # Sitenizin adresi
+tags_url: "etiketler"                        # Etiketler için alt dizin adı
 twitter_username: hesap                      # varsa Twitter kullanıcı adı
 github_username:  hesap                      # varsa GitHub kullanıcı adı
 speakerdeck_username: hesap                  # varsa SpeakerDeck kullanıcı adı
