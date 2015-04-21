@@ -64,7 +64,7 @@ rake post["Başlık","2015-04-17 22:00"]
 
 * **stash** ve **draft** özelliği gelecek
 * Deployment mekanizması
-* Kategori ve Etiket eklentisi
+* Kategori eklentisi
 * Paylaş eklentisi
 
 ## Açıklamalar
@@ -123,6 +123,17 @@ gibi kullanılabilir.
 Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
 ## Güncellemeler
+
+**2015-04-21**
+
+* `I18n` ile ilgili bazı hatalar düzeltildi.
+* `tags: [etiket1,etiket2]` gibi etiketleme desteği geldi.
+* Etiketleri üreten sayfa jeneratörü eklendi.
+* `{{ "Text" | to_url }}` Liquid filtresi eklendi.
+* `_layouts/tags.html` Etiketler için eklendi
+* `_includes/nav.html` etiket sayfaları ile ilgili düzenlendi.
+* `.tags` adında `_sass/_custom-styles.css` direktif eklendi.
+* `_locales/` de `en.yml` ve `tr.yml` düzenlendi.
 
 **2015-04-20**
 

@@ -3,14 +3,20 @@ layout: default
 ---
 
 <article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {{ content }}
-                <hr>
-                {% include disqus.html %}
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ content }}
+            <hr>
+            {% unless page.tags.empty? %}
+            <div class="tags">
+                <span>{{ site.data.messages.locales[site.locale].tags | capitalize }}</span>
+                {% for tag in page.tags %}
+                    <a href="{{ site.data.messages.locales[site.locale].tags | prepend: site.baseurl }}/{{ tag | to_url }}/"><i class="fa fa-tag"></i> {{ tag }}</a>
+                {% endfor %}
             </div>
+            <hr>
+            {% endunless %}
+            {% include disqus.html %}
         </div>
     </div>
 </article>
-

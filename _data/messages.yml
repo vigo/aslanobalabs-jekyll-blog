@@ -3,5 +3,7 @@ locales:
     previous_posts: "ESKİLER"
     next_posts: "YENİLER"
     toggle_navigation: "Navigasyonu değiştir"
+    tags: "etiketler"
+    displaying_related_tags: "İlgili etiketler görüntüleniyor."
     navigation:
         home: "Ana Sayfa"

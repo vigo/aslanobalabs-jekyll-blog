@@ -44,9 +44,9 @@ def prep_file(post_date, title)
   output << "title:         \"#{title}\""
   output << "subtitle:      \"Alt Başlık\""
   output << "date:          #{post_date}"
-  output << "# categories:    kategori kategori"
+  output << "# tags:          [etiket1,etiket2]"
   output << "header-img:    \"images/post-bg.jpg\""
-  output << "published: true"
+  output << "published:     true"
   output << "---"
   return {
     filename: "#{post_date.gsub(/[ :]/, "-")}-#{title.to_url}.md",

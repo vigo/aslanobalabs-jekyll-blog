@@ -18,11 +18,13 @@
                 <li>
                     <a href="{{ site.baseurl }}/">{{ site.data.messages.locales[site.locale].navigation.home }}</a>
                 </li>
-                {% for page in site.pages %}{% if page.title %}
-                <li>
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                </li>
-                {% endif %}{% endfor %}
+                {% for page in site.pages %}
+                    {% if page.title %}
+                        {% unless page.tag %}
+                            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                        {% endunless %}
+                    {% endif %}
+                {% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->

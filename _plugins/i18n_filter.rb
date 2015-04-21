@@ -1,31 +1,23 @@
 require 'i18n'
 
-LOCALE = :tr # set your locale
-
-# Create folder "_locales" and put some locale file from https://github.com/svenfuchs/rails-i18n/tree/master/rails/locale
-module Jekyll
-  module I18nFilter
-    # Example:
-    #   {{ post.date | localize: "%d.%m.%Y" }}
-    #   {{ post.date | localize: ":short" }}
-    def localize(input, format=nil)
-      load_translations
-      format = (format =~ /^:(\w+)/) ? $1.to_sym : format
-      I18n.l input, :format => format
-    end
-
-    def translate(key)
-      I18n.t key
-    end
-
-    def load_translations
-      I18n.enforce_available_locales = false
-      unless I18n::backend.instance_variable_get(:@translations)
-        I18n.backend.load_translations Dir[File.join(File.dirname(__FILE__),'../_locales/*.yml')]
-        I18n.locale = LOCALE
-      end
-    end
-  end
+I18n.enforce_available_locales = false
+unless I18n::backend.instance_variable_get(:@translations)
+  I18n.backend.load_translations Dir[File.join(File.dirname(__FILE__),'../_locales/*.yml')]
 end
+I18n.locale = Jekyll.configuration({})['locale'].to_sym || :tr
 
+module Jekyll
+   module I18nFilter
+     # {{ post.date | localize: "%d.%m.%Y" }}
+     # {{ post.date | localize: ":short" }}
+     def localize(input, format=nil)
+       format = (format =~ /^:(\w+)/) ? $1.to_sym : format
+       I18n.l input, :format => format
+     end
+     
+     def translate(key)
+       I18n.t key
+     end
+   end
+end
 Liquid::Template.register_filter(Jekyll::I18nFilter)
