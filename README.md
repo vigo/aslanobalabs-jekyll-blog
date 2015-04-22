@@ -3,14 +3,14 @@
 [Clean Blog][01] [Bootstrap][02] teması modifiye edilerek geliştirilen
 [Jekyll][03] statik site uygulamasıdır.
 
-## Yapılan Değişiklikler
 
+## Yapılan Değişiklikler
 * LESS yerine SASS entegre edildi. (CSS)
 * Rake ile çeşitli otomasyon özellikleri geldi.
 * Markdown Engine değiştirildi.
 
-## Kurulum
 
+## Kurulum
 * Ruby 2.2.0 (rbenv/rvm)
 * Bundler
 
@@ -26,8 +26,8 @@ rake initialize  # ilk konfigürasyon dosyasının ayarlanması
 Bu ilk kurulumdan sonra sadece `rake` yazarak ön izleme sunucusunu
 çalıştırabilirsiniz.
 
-## Kullanım
 
+## Kullanım
 `rake -T` ile ilgili seçenekleri listeleyebilirsiniz:
 
 ```sh
@@ -44,6 +44,7 @@ rake post
 # varolan (default) başlıkla yeni yazı açar
 # 2015-04-17-13-55-yeni-yazim.md
 
+
 rake post["Başlık"]
 # otomatik olarak o anın tarihini kullanır
 # 2015-04-17-13-55-baslik.md
@@ -53,24 +54,23 @@ rake post["Başlık","2015-04-17 22:00"]
 # 2015-04-17-22-00-baslik.md
 ```
 
-## Ek Özellikler
 
+## Ek Özellikler
 * i18n desteği, `{{ post.date | localize: "%d.%m.%Y" }}` ya da
 `{{ post.date | localize: ":short" }}`
 * Türçe sözlük `_data/messages.yml`
 * Çevre değişkeni desteği `{{ site.env == "development" }}`
 
-## Eksikler (To DO)
 
+## Eksikler (TO DO)
 * **stash** ve **draft** özelliği gelecek
-* Deployment mekanizması
+* GitHub pages’a deployment (gh-pages)
 * Kategori eklentisi
 * Paylaş eklentisi
 
+
 ## Açıklamalar
-
 ### site.env
-
 Özellikle disqus kullanımı esnasında, eğer geliştirme modundaysak boşu boşuna
 disqus’ın kodunu siteye ekletmemek için yapılan kontrol. Aksi halde, disqus,
 otomatik olarak `http://127.0.0.1:4000/` adresleriyle dolu sayfalar
@@ -81,14 +81,12 @@ Yani siteyi test ederken, `disqus_shortname` girmenize rağmen ilgili eklentinin
 ve canlıda (*production*) aktive olacaktır.
 
 ## Resim Ölçüleri ve Format
-
 * Resimler `JPG` kullanılmıştır, isteğe göre başka bir format da
 kullanabilirsiniz.
 * Arkaplanlardaki resim ölçüsü  `1900 × 872 pixel` dir.
 * Post içi fotoğraf ölçüsü `778 × 514 pixel` dir.
 
 ## Retina Desteği
-
 Özellikle post içi resimlerde kullanmak için iki farklı ölüçüde dosya
 oluşturmanız gerekir. Retina resimler `@2x` ile bitmeli. Örneğin post
 içi resimlerde retina için:
@@ -100,7 +98,6 @@ içi resimlerde retina için:
 hali gerekmektedir.
 
 ## i18n ve Türkçe Desteği
-
 Ruby on Rails'in locale dosyasından `_locales/tr.yml` sayesinde tarih işlemleri
 ve çıktısında Türkçe kullanılabiliyor. Buna ek olarak `_data/messages.yml`
 dosyasında da Türkçe sözlük bulunuyor.
@@ -118,16 +115,30 @@ gibi otomatik gelen mesajlar artık Türkçe. Kendiniz de ek yapar başka
 gibi kullanılabilir.
 
 
-## Kaynaklar
+## Deployment
+### Rsync
 
+`ssh` ile bağlantı yapabileceğiniz herhangi bir sunucuya ürettiğiniz siteyi
+kolayca gönderebilirsiniz. Örnek `_credentials.example.yml` dosyasını
+`_credentials.yml` olarak kaydedin ve ilgili yerleri doldurun.
+
+    server: domain
+    user: kullanici_adi
+    path: /path/to/server/domain.com
+
+Unutmayın! bu dosya git tarafından **ignore** edilmiş durumdadır!
+
+
+## Kaynaklar
 Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
-## Güncellemeler
 
+## Güncellemeler
 **2015-04-22**
 
 * `posted_by:` özelliği geldi.
 * `I18n` default locale sorunu düzeltildi (*re-genaration sırasında*)
+* `rake deploy:rsync` özelliği geldi.
 
 **2015-04-21**
 
@@ -156,8 +167,8 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 * Retina desteği eklendi
 * Disqus yorum eklentisi
 
-## Katkı Yapmak için
 
+## Katkı Yapmak için
 1. `fork` yapın ( https://github.com/aslanobalabs/aslanobalabs-jekyll-blog/fork )
 2. Kendi `branch`’inizi yapın (`git checkout -b benim-eklerim`)
 3. Yaptıklarınızı `commit` edin (`git commit -am 'Yeni özellikler'`)
