@@ -46,6 +46,7 @@ address {
 
 @media only screen and (min-width: 1170px){
   .navbar-custom.is-fixed {
+    border-bottom: none;
     background-color: #555;
     .nav li a {
       color: white;
