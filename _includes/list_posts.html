@@ -1,0 +1,13 @@
+<a href="{{ post.url | prepend: site.baseurl }}">
+    <h2 class="post-title">{{ post.title }}</h2>
+    {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
+</a>
+<p class="post-meta">{% if post.posted_by %}{{ post.posted_by }}, {% endif %}{{ post.date | localize: "%-d %B %Y, %A %H:%M" }}</p>
+
+{% unless post.tags.empty? %}
+    <div class="tags">
+        {% for tag in post.tags %}
+            <a href="/{{ site.data.messages.locales[site.locale].tags | prepend: site.baseurl }}/{{ tag | to_url }}/"><i class="fa fa-tag"></i> {{ tag }}</a>
+        {% endfor %}
+    </div>
+{% endunless %}
