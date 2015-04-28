@@ -20,6 +20,13 @@ address {
   }
 }
 
+blockquote {
+  p {
+    margin: 0;
+    font-size: 150%;
+  }
+}
+
 
 @media only screen and (max-width: 767px) {
     .navbar-custom {
