@@ -27,6 +27,16 @@ blockquote {
   }
 }
 
+footer {
+  .copyright {
+    a {
+      color: inherit;
+      &:hover {
+        color: #337ab7;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 767px) {
     .navbar-custom {
