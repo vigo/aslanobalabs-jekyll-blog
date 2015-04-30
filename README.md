@@ -134,6 +134,10 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
 
 ## Güncellemeler
+**2015-04-30**
+
+* YouTube video tag eklentisi `{% youtube ID %}`
+
 **2015-04-22**
 
 * `posted_by:` özelliği geldi.
