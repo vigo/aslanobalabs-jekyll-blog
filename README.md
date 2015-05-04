@@ -134,6 +134,10 @@ Sitede kullanılan fotoğraflar [wallpapervortex][04] sitesinden alınmıştır.
 
 
 ## Güncellemeler
+**2015-05-04**
+
+* Küçük ekranlarda resimlerin responsive olarak değişmesi eklendi.
+
 **2015-04-30**
 
 * YouTube video tag eklentisi `{% youtube ID %}`
