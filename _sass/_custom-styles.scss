@@ -1,4 +1,5 @@
-// add your custom styles here...
+
+
 .pager li>a {
     text-transform: none;
 }
@@ -35,6 +36,14 @@ footer {
         color: #337ab7;
       }
     }
+  }
+}
+
+
+.blog-post, .page-layout {
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
