@@ -48,7 +48,7 @@ namespace :deploy do
     ENV["JEKYLL_ENV"] = "production"
     system "jekyll build"
     system "rsync -av _site/ #{deploy_to}"
-    puts "Rsync ile deploy işlemei tamamlandı!"
+    puts "Rsync ile deploy işlemi tamamlandı!"
   end
 end
 
